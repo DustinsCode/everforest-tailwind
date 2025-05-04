@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+/* light mode */
+:root {
+    --foreground: #5C6A72;
+    --red: #F85552;
+    --orange: #F57D26;
+    --yellow: #DFA000;
+    --green: #8DA101;
+    --blue: #3A94C5;
+    --aqua: #35A77C;
+    --purple: #DF69BA;
+    --background-dim: #E5DFC5;
+    --background-0: #F3EAD3;
+    --background-1: #EAE4CA;
+    --background-2: #E5DFC5;
+    --background-3: #DDD8BE;
+    --background-4: #D8D3BA;
+    --background-5: #B9C0AB;
+    --background-red: #F4DBD0;
+    --background-visual: #E1E4BD;
+    --background-yellow: #F1E4C5;
+    --background-green: #E5E6C5;
+    --background-blue: #E1E7DD;
+    --gray-0: #A6B0A0;
+    --gray-1: #939F91;
+    --gray-2: #829181;
+}
+
+/* dark mode */
+.dark {
+    --foreground: #D3C6AA;
+    --red: #E67E80;
+    --orange: #E69875;
+    --yellow: #DBBC7F;
+    --green: #A7C080;
+    --blue: #7FBBB3;
+    --aqua: #83C092;
+    --purple: #D699B6;
+    --background-dim: #293136;
+    --background-0: #333C43;
+    --background-1: #3A464C;
+    --background-2: #434F55;
+    --background-3: #4D5960;
+    --background-4: #555F66;
+    --background-5: #5D6B66;
+    --background-red: #5C3F4F;
+    --background-visual: #59464C;
+    --background-yellow: #55544A;
+    --background-green: #48584E;
+    --background-blue: #3F5865;
+    --gray-0: #7A8478;
+    --gray-1: #859289;
+    --gray-2: #9DA9A0;
+}
+
+@theme inline {
+    --color-foreground: var(--foreground);
+    --color-red: var(--red);
+    --color-orange: var(--orange);
+    --color-yellow: var(--yellow);
+    --color-green: var(--green);
+    --color-blue: var(--blue);
+    --color-aqua: var(--aqua);
+    --color-purple: var(--purple);
+    --color-bg-dim: var(--background-dim);
+    --color-bg-0: var(--background-0);
+    --color-bg-1: var(--background-1);
+    --color-bg-2: var(--background-2);
+    --color-bg-3: var(--background-3);
+    --color-bg-4: var(--background-4);
+    --color-bg-5: var(--background-5);
+    --color-bg-red: var(--background-red);
+    --color-bg-visual: var(--background-visual);
+    --color-bg-yellow: var(--background-yellow);
+    --color-bg-green: var(--background-green);
+    --color-bg-blue: var(--background-blue);
+    --color-gray-0: var(--gray-0);
+    --color-gray-1: var(--gray-1);
+    --color-gray-2: var(--gray-2);
+}
